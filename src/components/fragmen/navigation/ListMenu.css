@@ -1,0 +1,5 @@
+/* styles.css or your stylesheet */
+li:hover a {
+    color: #c04c67;
+    /* Set your desired text color */
+}

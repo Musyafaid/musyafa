@@ -1,0 +1,27 @@
+@keyframes borderAnimation {
+    0% {
+        border-radius: 57% 43% 70% 30% / 30% 15% 85% 70%;
+    }
+
+    25% {
+        border-radius: 57% 43% 38% 62% / 52% 54% 46% 48%;
+    }
+
+    50% {
+        border-radius: 24% 76% 32% 68% / 67% 37% 63% 33%;
+    }
+
+    75% {
+        border-radius: 50% 50% 64% 36% / 67% 37% 63% 33%;
+    }
+
+    100% {
+        border-radius: 57% 43% 70% 30% / 30% 15% 85% 70%;
+    }
+}
+
+.border-anim {
+    animation: borderAnimation 8s linear infinite;
+    border-color: #7d2439;
+    /* Durasi diperpanjang dan jenis easing diubah menjadi linear */
+}

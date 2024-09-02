@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: #020617;
+  color: white;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
