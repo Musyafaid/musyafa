@@ -43,7 +43,7 @@ const IntroPages = () => {
                     className="
                   
                     border-anim border-solid border-4 bg-transparent mr-10"
-                    src="../../../../public/ms-1.png"
+                    src="/ms-1.png"
                     alt=""
                 />
             </div>
