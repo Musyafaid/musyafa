@@ -28,10 +28,7 @@ function Header() {
         listname: "About",
         listlink: "#aboutpages",
     };
-    const contact = {
-        listname: "Contact",
-        listlink: "#contactpages",
-    };
+ 
     const projects = {
         listname: "Projects",
         listlink: "#projectpages",
@@ -49,7 +46,7 @@ function Header() {
                 <ul className="h-10 flex items-center">
                     <ListMenu {...home} />
                     <ListMenu {...about} />
-                    <ListMenu {...contact} />
+             
                     <ListMenu {...projects} />
                 </ul>
             </div>
