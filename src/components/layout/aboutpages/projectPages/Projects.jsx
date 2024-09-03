@@ -1,12 +1,45 @@
-import React from 'react'
+
+
+import React, { useEffect, useRef, useState } from 'react';
+import '../fragmenPages/SkilsFragment'; 
 
 
 export default function Projects() {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.5 } 
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className=" w-1/2 px-3 rounded lg:flex">
+    <>
+       <h1
+        ref={ref}
+        className={` text-xl pb-1 mx-3 mb-2 w-36 scroll-reveal ${isVisible ? 'visible' : ''}`}
+        >
+       My Project
+      </h1>
+    
+    <div className=" w-1/2 mx-3 rounded flex hover:shadow-lg hover:shadow-gray-700 transition  ">
     <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style={{ backgroundImage: "url('/login.jpg')" }} title="Woman holding a mug">
     </div>
-    <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+    <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-slate-100 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
       <div className="mb-8">
         <p className="text-sm text-gray-600 flex items-center">
           <svg className="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -27,5 +60,6 @@ export default function Projects() {
     </div>
   </div>
   
+        </>
   )
 }
