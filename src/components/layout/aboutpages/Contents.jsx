@@ -10,7 +10,7 @@ function About() {
      
         <Router>
           <div className="w-full h-14 rounded " id='#aboutpages'>
-            <div className="w-5/6 flex justify-evenly px-2 m-auto border-b-2 mt-9">
+            <div className="w-5/6 flex justify-evenly px-2 m-auto  mt-9">
               <Link to="/" className="w-28 rounded-sm text-center h-full hover:bg-rose-800">
                 About Me
               </Link>
@@ -19,7 +19,7 @@ function About() {
               </Link>
             </div>
           </div>
-          <div className="m-auto w-5/6  rounded-sm p-5  bg-slate-900">
+          <div className="m-auto w-5/6  rounded-sm p-5 ">
           <Routes>
             <Route path="/" element={<AboutFragmen />} />
             <Route path="/skils" element={<SkilsFragment />} />

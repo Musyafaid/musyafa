@@ -1,0 +1,25 @@
+/* src/components/ScrollReveal.css */
+.scroll-reveal {
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .scroll-reveal::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #f03c3c; /* Adjust the color as needed */
+    transition: transform 1s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  
+  .scroll-reveal.visible::before {
+    transform: scaleX(1);
+  }
+  
