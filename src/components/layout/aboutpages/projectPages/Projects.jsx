@@ -28,7 +28,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <>
+    <div id='projectpages'>
        <h1
         ref={ref}
         className={` text-xl pb-1 mx-3 mb-2 w-36 scroll-reveal ${isVisible ? 'visible' : ''}`}
@@ -60,6 +60,6 @@ export default function Projects() {
     </div>
   </div>
   
-        </>
+        </div>
   )
 }

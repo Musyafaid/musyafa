@@ -8,6 +8,7 @@ export default function SkilsFragment() {
 
       <div className=' border-none gap-3 flex w-auto justify-around items-center border rounded-sm'>
         <img className='size-10 grayscale hover:grayscale-0' src="/react.svg" alt="" />
+        <img className='size-10 grayscale hover:grayscale-0' src="/pngegg.png" alt="" />
         <img className='size-10 grayscale hover:grayscale-0' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" />
         <img className='size-10 grayscale hover:grayscale-0' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="" />
         <img className='size-10 grayscale hover:grayscale-0' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" />
