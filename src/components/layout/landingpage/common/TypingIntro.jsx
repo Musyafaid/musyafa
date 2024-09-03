@@ -50,9 +50,9 @@ export default function TypingIntro() {
                 />
             </div>
 
-            <div className=" flex items-center  w-full h-1/4">
+            <div className=" flex  items-center  w-full h-1/6">
                 <a
-                    className="max-md:text-xs w-36 h-10 max-sm:w-24 max-md:h-full bg-rose-700 rounded-md hover:bg-rose-800 flex items-center justify-center"
+                    className="max-md:text-xs w-36 h-full max-sm:w-24 max-md:h-full bg-rose-700 rounded-md hover:bg-rose-800 flex items-center justify-center"
                     href="#aboutpages"
                 >
                     Hire Me....🚀🤖
