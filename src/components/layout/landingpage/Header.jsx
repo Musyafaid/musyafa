@@ -39,8 +39,8 @@ function Header() {
             className={`w-full h-12 flex items-center fixed top-0 z-10 transition-all ${isScrolled ? "bg-slate-950" : "bg-transparent"
                 }`}
         >
-            <h3 className=" font-bold flex justify-center text-xl w-1/5">
-                My Web
+            <h3 className=" font-bold flex justify-center text-xl w-1/5 hover:text-rose-500 hover:cursor-pointer">
+                Musyafa Achmad.
             </h3>
             <div className="w-3/5 flex items-center justify-center">
                 <ul className="h-10 flex items-center">
@@ -51,7 +51,9 @@ function Header() {
                 </ul>
             </div>
             <div className="w-1/5 flex justify-center">
-                <img className="size-9 max-md:size-6" src="/github (1).svg" alt="" />
+                <a href="https://github.com/Musyafaid">
+                <img className="size-9 max-md:size-6 grayscale hover:grayscale-0" src="/github (1).svg" alt="" />
+                </a>
             </div>
         </div>
     );

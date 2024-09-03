@@ -35,7 +35,7 @@ export default function Projects() {
         >
        My Project
       </h1>
-    
+    <a href="https://github.com/Musyafaid/myshopp">
     <div className=" w-1/2 mx-3 rounded flex hover:shadow-lg hover:shadow-gray-700 transition  ">
     <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style={{ backgroundImage: "url('/login.jpg')" }} title="Woman holding a mug">
     </div>
@@ -60,6 +60,7 @@ export default function Projects() {
     </div>
   </div>
   
+    </a>
         </div>
   )
 }
