@@ -11,13 +11,14 @@ function About() {
       
           
           <div className="m-auto w-5/6  rounded-sm p-5 ">
+            <SkilsFragment />
             <AboutFragmen />
           </div>
          
       
         <div className='w-5/6 mb-36 px-2 mx-auto'>
         
-          <div className='   mt-8'>
+          <div className='mt-8 pb-5'>
          
             <Projects />
           </div>
