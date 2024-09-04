@@ -1,5 +1,22 @@
-/* styles.css or your stylesheet */
-li:hover a {
-    color: #c04c67;
-    /* Set your desired text color */
+li {
+    border-bottom: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #be123c ;
+    transition: transform 1s ease-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+li:hover::before {
+    transform: scaleX(1);
 }

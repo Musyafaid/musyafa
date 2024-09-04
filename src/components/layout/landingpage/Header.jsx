@@ -43,7 +43,7 @@ function Header() {
                 Musyafa Achmad.
             </h3>
             <div className="w-3/5 flex items-center justify-center">
-                <ul className="h-10 flex items-center">
+                <ul className=" flex items-center">
                     <ListMenu {...home} />
                     <ListMenu {...about} />
              
