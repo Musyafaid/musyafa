@@ -4,10 +4,9 @@ export default function TypingIntro() {
     return (
         <div
             style={{ height: "50%" }}
-            className="w-full max-md:h-3/5 mb-1  flex flex-col items-start relative">
+            className="w-full  mb-1  flex flex-col items-start relative">
 
-
-            <div className=" flex items-center  w-full h-2/4">
+            <div className=" flex items-center max-md:h-auto  max-md:w-screen  w-full h-2/4">
                 <TypeAnimation
 
                     sequence={[
@@ -18,16 +17,17 @@ export default function TypingIntro() {
                     wrapper="span"
                     speed={40}
                     style={{
-                        fontSize: '4vw',
+                        fontSize: '8vmin',
                         lineHeight: '1',
                         fontWeight: '1000',
                         display: 'inline-block',
+                        overflow : 'hidden'
                     }}
                     repeat={0} // Repeat indefinitely
                 />
             </div>
 
-            <div className=" flex items-center  w-full h-1/4">
+            <div className=" flex items-center  w-full h-1/4 max">
                 <TypeAnimation
                     // Adjusted top value to prevent overlap
                     sequence={[
@@ -42,8 +42,9 @@ export default function TypingIntro() {
                     speed={23}
                     cursor={false}
                     style={{
-                        fontSize: '3vw',
+                        fontSize: '5vmin ',
                         display: 'inline-block',
+                        overflow:'hidden'
                        
                     }}
                     repeat={Infinity} // Repeat indefinitely

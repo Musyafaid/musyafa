@@ -7,7 +7,7 @@ import BgParticles from "../layout/landingpage/common/BgParticles";
 
 function LandingPages() {
     return (
-        <div className="w-screen h-screen">
+        <div className="w-screen  h-screen ">
             <IntroPages />
             <BgParticles />
 

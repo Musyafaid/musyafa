@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
 import ListMenu from "./common/navigation/ListMenu.jsx";
-import "./Header.css"
+import "./Header.css";
 
 function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = window.scrollY;
-            const isTop = scrollTop < 20; // Ubah nilai ini sesuai kebutuhan
+            const isTop = scrollTop < 20; 
 
             setIsScrolled(!isTop);
         };
@@ -20,47 +21,59 @@ function Header() {
         };
     }, []);
 
-    const home = {
-        listname: "Home",
-        listlink: "/",
-    };
-    const about = {
-        listname: "About",
-        listlink: "#aboutpages",
-    };
- 
-    const projects = {
-        listname: "Projects",
-        listlink: "#projectpages",
-    };
-
-    const contact = {
-        listname: "Contact",
-        listlink: "#contact",
-    };
+    const home = { listname: "Home", listlink: "/" };
+    const about = { listname: "About", listlink: "#aboutpages" };
+    const projects = { listname: "Projects", listlink: "#projectpages" };
+    const contact = { listname: "Contact", listlink: "#contact" };
 
     return (
-        <div
-            className={`w-full h-12 flex items-center fixed top-0 z-10 transition-all ${isScrolled ? "bg-slate-950" : "bg-transparent"
-                }`}
+        <header
+            className={`w-full h-12 fixed top-0 z-10 transition-all ${isScrolled ? "bg-slate-950" : "bg-transparent"} flex items-center justify-between px-4 md:px-8`}
         >
-            <h3 className=" font-bold flex justify-center text-xl w-1/5 hover:text-rose-600 hover:cursor-pointer">
-                Musyafa Achmad.
+            {/* GitHub Logo - Left */}
+     
+
+            {/* Brand - Center */}
+            <div className="md:w-1/5  sm:text-xs sm:w-screen">
+                
+            <h3 className="font-bold w-full sm:flex sm:justify-center  text-xl hover:text-rose-600 hover:cursor-pointer">
+                Musyafa Achmad
             </h3>
-            <div className="w-3/5 flex items-center justify-center">
-                <ul className=" flex items-center">
+            </div>
+
+            {/* Hamburger Icon */}
+            <button
+                className="md:hidden flex items-center justify-center ml-auto"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+                <svg
+                    className="w-6 h-6 text-gray-700 hover:text-rose-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <div className={`md:flex ${isMenuOpen ? "flex flex-col max-md:absolute -z-10 top-12 w-screen max-md:right-0"  : "hidden"} ${isScrolled ? "bg-slate-950" : "bg-transparent"} w-full md:w-3/5  md:flex-row md:items-center justify-center`}>
+                <ul className="flex w-full justify-center flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4">
                     <ListMenu {...home} />
                     <ListMenu {...about} />
                     <ListMenu {...projects} />
                     <ListMenu {...contact} />
                 </ul>
             </div>
-            <div className="w-1/5 flex justify-center">
-                <a href="https://github.com/Musyafaid">
-                <img className="size-9 max-md:size-6 grayscale hover:grayscale-0" src="/github (1).svg" alt="" />
-                </a>
-            </div>
-        </div>
+
+            <a href="https://github.com/Musyafaid" className="md:flex w-1/5 hidden flex justify-end">
+                <img
+                    className="w-8 h-8 grayscale hover:grayscale-0 "
+                    src="/github (1).svg"
+                    alt="GitHub"
+                />
+            </a>
+        </header>
     );
 }
 

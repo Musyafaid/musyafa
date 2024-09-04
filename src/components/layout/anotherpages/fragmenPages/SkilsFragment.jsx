@@ -33,7 +33,7 @@ export default function SkilsFragment() {
           ))}
         </div>
 
-        {/* Second set of images */}
+        
         <div className='flex py-1 gap-2 justify-evenly mt-4'>
           {imgLink2.map((img, index) => (
             <img

@@ -9,7 +9,7 @@ function Aboutsection() {
     return (
         <div
             id="aboutpages"
-            className=" h-screen w-screen pt-12 bg-slate-950  " >
+            className="  w-screen pt-12 bg-slate-950  " >
             <Contents />
             <Copyright />
             

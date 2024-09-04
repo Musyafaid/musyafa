@@ -26,7 +26,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div id='projectpages'>
+    <div id='projectpages' className=''>
        <h1
         ref={ref}
         className={` text-xl pb-1 mx-3 mb-2 w-36 scroll-reveal ${isVisible ? 'visible' : ''}`}
@@ -34,8 +34,9 @@ export default function Projects() {
        My Project
       </h1>
     <a href="https://github.com/Musyafaid/myshopp">
-    <div className=" w-1/2 mx-3 rounded flex hover:shadow-lg hover:shadow-gray-700 transition  ">
+    <div className=" w-1/2 max-md:w-full max-md:mx-0 max-md:flex-col mx-3 rounded flex hover:shadow-lg hover:shadow-gray-700 transition  ">
     <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style={{ backgroundImage: "url('/login.jpg')" }} title="Woman holding a mug">
+    
     </div>
     <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-slate-100 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
       <div className="mb-8">

@@ -9,14 +9,14 @@ function App() {
 
 
   return (
-    <>
+    <div className="flex flex-col w-screen items-center">
       < Header />
       < LandingPages />
       <Aboutsection />
       
       
       
-    </>
+    </div>
   )
 }
 

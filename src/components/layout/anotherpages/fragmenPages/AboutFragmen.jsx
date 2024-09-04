@@ -26,14 +26,14 @@ export default function AboutFragment() {
   }, []);
 
   return (
-    <div>
+    <div className='w-full '>
       <h1
         ref={ref}
         className={` text-xl pb-1 w-36 scroll-reveal ${isVisible ? 'visible' : ''}`}
       >
         About me
       </h1>
-      <div className=' w-2/3'>
+      <div className=' w-2/3 max-md:w-full max-md:text-justify'>
         <p>
           I am a student at SMKN 1 Bukateja, specializing in Software Engineering (RPL) in my final year. With a strong foundation in programming and software development, I am passionate about using technology to address real-world challenges. My studies and hands-on projects have provided me with valuable skills in coding, debugging, and project management. I am eager to apply these skills in a professional environment and contribute to innovative projects. I am currently seeking internship opportunities or collaborative projects to gain practical experience and enhance my expertise. Connect with me if you have opportunities or advice in the software engineering field.
         </p>
