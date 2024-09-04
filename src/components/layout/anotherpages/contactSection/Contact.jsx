@@ -5,7 +5,7 @@ export default function Contact() {
 
   const links = [
     {href : "https://www.instagram.com/msyfchmd/", icon:Instagram},
-    {href : "www.linkedin.com/in/musyafa-ahmad-saputra", icon:Linkedin},
+    {href : "https://www.linkedin.com/in/musyafa-ahmad-saputra/", icon:Linkedin},
     {href : "https://x.com/CallmeDecul", icon:X},
     {href : "https://github.com/Musyafaid", icon:Github}
   ];
