@@ -3,7 +3,7 @@ import Contents from "../layout/anotherpages/Contents"
 import Copyright from "../layout/Copyright"
 
 
-function AnotherPages() {
+function Aboutsection() {
 
     useEffect
     return (
@@ -17,4 +17,4 @@ function AnotherPages() {
     )
 }
 
-export default AnotherPages
+export default Aboutsection
