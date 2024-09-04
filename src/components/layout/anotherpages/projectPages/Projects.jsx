@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import '../aboutSection/SkilsFragment'; 
+import '../fragmenPages/SkilsFragment'; 
 
 
 export default function Projects() {

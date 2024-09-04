@@ -1,8 +1,9 @@
 import { useEffect } from "react"
-import Contents from "../layout/aboutpages/Contents"
+import Contents from "../layout/anotherpages/Contents"
+import Copyright from "../layout/Copyright"
 
 
-function AboutPages() {
+function AnotherPages() {
 
     useEffect
     return (
@@ -10,8 +11,10 @@ function AboutPages() {
             id="aboutpages"
             className=" h-screen w-screen pt-12 bg-slate-950  " >
             <Contents />
+            <Copyright />
+            
         </div>
     )
 }
 
-export default AboutPages
+export default AnotherPages

@@ -18,9 +18,9 @@ export default function TypingIntro() {
                     wrapper="span"
                     speed={40}
                     style={{
-                        fontSize: '5vw',
+                        fontSize: '4vw',
                         lineHeight: '1',
-                        fontWeight: '800',
+                        fontWeight: '1000',
                         display: 'inline-block',
                     }}
                     repeat={0} // Repeat indefinitely

@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './ScrollReveal.css'; 
 
-export default function AboutSection() {
+export default function AboutFragment() {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 

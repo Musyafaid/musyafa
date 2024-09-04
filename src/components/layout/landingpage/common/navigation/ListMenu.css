@@ -1,0 +1,22 @@
+#menusection {
+    border-bottom: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+#menusection::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #be123c ;
+    transition: transform 1s ease-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+#menusection:hover::before {
+    transform: scaleX(1);
+}

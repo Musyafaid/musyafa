@@ -1,19 +1,18 @@
 import Header from "./components/layout/landingpage/Header"
-import AboutPages from "./components/pages/AboutPages"
 import LandingPages from "./components/pages/LandingPages"
-// import 'index.css';
+// import AnotherPages from "./components/pages/AnotherPages"
+import './index.css';
 
 
 function App() {
 
 
   return (
-    <div >
-      < LandingPages />
-      <AboutPages />
+    <>
       < Header />
-    <img src="./" alt="" />
-    </div >
+      < LandingPages />
+      {/* < AnotherPages /> */}
+    </>
   )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function SkilsSection() {
+export default function SkilsFragment() {
   return (
     <div className='w-44 my-8'>
       <h3 className='text-base font-semibold'>Current favorite stack</h3>
