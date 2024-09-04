@@ -15,8 +15,7 @@
 
 *{
   scroll-behavior: auto;
-  font-family: 'Lexend', sans-serif;
-                                                
+  font-family: 'Lexend', sans-serif;                                 
   color: rgb(216, 216, 216);
   transition: all 400ms;
 }
