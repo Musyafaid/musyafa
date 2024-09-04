@@ -1,5 +1,6 @@
 import Header from "./components/layout/landingpage/Header"
 import LandingPages from "./components/pages/LandingPages"
+import LandingPages from "./components/pages/AnotherPages "
 import './index.css';
 
 
@@ -10,6 +11,9 @@ function App() {
     <>
       < Header />
       < LandingPages />
+      <LandingPages />
+      
+      
       
     </>
   )
