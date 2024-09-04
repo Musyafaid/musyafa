@@ -1,10 +1,10 @@
-li {
+#menusection {
     border-bottom: 2px solid transparent;
     position: relative;
     overflow: hidden;
 }
 
-li::before {
+#menusection::before {
     content: '';
     position: absolute;
     left: 0;
@@ -17,6 +17,6 @@ li::before {
     transform-origin: left;
 }
 
-li:hover::before {
+#menusection:hover::before {
     transform: scaleX(1);
 }
