@@ -12,9 +12,6 @@ function App() {
       < Header />
       < LandingPages />
       <AnotherPages />
-
-      
-    <img src="./" alt="" />
     </>
   )
 }
