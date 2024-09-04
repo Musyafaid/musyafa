@@ -11,7 +11,7 @@ function App() {
     <>
       < Header />
       < LandingPages />
-      <AnotherPages />
+      < AnotherPages />
     </>
   )
 }
