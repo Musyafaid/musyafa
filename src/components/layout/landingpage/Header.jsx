@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ListMenu from "../../fragmen/navigation/ListMenu.jsx";
+import ListMenu from "./common/navigation/ListMenu.jsx";
 import "./Header.css"
 
 function Header() {

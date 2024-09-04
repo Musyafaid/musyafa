@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import Contents from "../layout/aboutpages/Contents"
+import Contents from "../layout/anotherpages/Contents"
 
 
 function AboutPages() {
