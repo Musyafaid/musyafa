@@ -16,7 +16,7 @@ const BgParticles = () => {
 
     return (
 
-        <div >
+        <div  >
 
             <Particles
                 id="tsparticles"

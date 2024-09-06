@@ -9,7 +9,7 @@ function App() {
 
 
   return (
-    <div className="flex flex-col w-screen items-center">
+    <div className="flex flex-col w-screen over items-center">
       < Header />
       < LandingPages />
       <Aboutsection />

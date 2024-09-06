@@ -28,15 +28,15 @@ function Header() {
 
     return (
         <header
-            className={`w-full h-12 fixed top-0 z-10 transition-all ${isScrolled ? "bg-slate-950" : "bg-transparent"} flex items-center justify-between px-4 md:px-8`}
+            className={`w-screen h-12 fixed top-0 z-10 transition-all ${isScrolled ? "bg-slate-950" : "bg-transparent"} flex items-center justify-between px-4 md:px-8`}
         >
             {/* GitHub Logo - Left */}
      
 
             {/* Brand - Center */}
-            <div className="md:w-1/5  sm:text-xs sm:w-screen">
+            <div className="md:w-1/5  max-md:text-xs max-md:w-screen">
                 
-            <h3 className="font-bold w-full sm:flex sm:justify-center  text-xl hover:text-rose-600 hover:cursor-pointer">
+            <h3 className="font-bold w-full max-md:flex max-md:justify-center  text-xl hover:text-rose-600 hover:cursor-pointer">
                 Musyafa Achmad
             </h3>
             </div>

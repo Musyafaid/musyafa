@@ -17,7 +17,7 @@ const IntroPages = () => {
     }, []);
 
     return (
-        <div className="w-screen h-screen flex items-center justify-between pt-10 max-md:flex max-md:flex-col max-md:justify-center">
+        <div className="w-screen  h-screen flex items-center justify-between pt-10 max-md:flex max-md:flex-col max-md:justify-center">
             <div
                 data-aos="fade-right"
                 data-aos-offset="50%" // Set offset ke 50%

@@ -1,0 +1,11 @@
+
+
+/* Target the toolbar button text */
+.chrono-toolbar-button {
+  color: red !important; /* Change toolbar button text color to red */
+}
+
+/* Customize hover state if necessary */
+.chrono-toolbar-button:hover {
+  color: darkred !important; /* Change color on hover */
+}
