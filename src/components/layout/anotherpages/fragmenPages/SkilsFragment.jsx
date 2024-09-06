@@ -18,7 +18,7 @@ export default function SkilsFragment() {
   ];
 
   return (
-    <div className='w-44 my-8'>
+    <div className='w-44 my-8 mx-8'>
       <h3 className='text-base font-semibold'>Current favorite stack</h3>
 
       <div className='border-none flex flex-col justify-start w-auto border rounded-sm'>

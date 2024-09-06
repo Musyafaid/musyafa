@@ -26,7 +26,7 @@ export default function AboutFragment() {
   }, []);
 
   return (
-    <div className='w-full '>
+    <div className='w-full mx-8 '>
       <h1
         ref={ref}
         className={` text-xl pb-1 w-36 scroll-reveal ${isVisible ? 'visible' : ''}`}

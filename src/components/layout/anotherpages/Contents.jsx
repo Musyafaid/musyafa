@@ -11,10 +11,10 @@ function About() {
      
       
           
-          <div className="m-auto w-5/6  rounded-sm px-5 ">
+          <div className="m-auto   rounded-sm px-5 ">
             <SkilsFragment />
             <AboutFragmen />
-            <Timelines />
+             <Timelines />
           </div>
          
       
