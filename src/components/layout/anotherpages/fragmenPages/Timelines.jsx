@@ -8,7 +8,7 @@ export default function Timelines() {
             title: 'July 2022',
             cardTitle: 'Graduated from University',
             content: (
-                <div className="p-4">
+                <div className="py-0 px-5 ">
                     <h4 className="text-xs sm:text-sm md:text-base text-gray-400">Computer Science</h4>
                     <p className="text-xs sm:text-sm md:text-base text-gray-300">
                         Successfully graduated from XYZ University with a degree in Computer Science. Specialized in web development and AI.
@@ -27,7 +27,7 @@ export default function Timelines() {
             title: 'July 2023',
             cardTitle: 'Joined ABC Company',
             content: (
-                <div className="p-4">
+                <div className="py-0 px-5 flex flex-col items-start ">
                     <h4 className="text-xs sm:text-sm md:text-base text-gray-400">Web Developer</h4>
                     <p className="text-xs sm:text-sm md:text-base text-gray-300">
                         Started my professional career as a web developer at ABC Company. Worked on several projects including e-commerce websites and internal tools.
@@ -46,7 +46,7 @@ export default function Timelines() {
             title: 'July 2024',
             cardTitle: 'Launched My Startup',
             content: (
-                <div className="p-4">
+                <div className="py-0 px-5 ">
                     <h4 className="text-xs sm:text-sm md:text-base text-gray-400">Tech Entrepreneur</h4>
                     <p className="text-xs sm:text-sm md:text-base text-gray-300">
                         Founded my own startup focused on building AI-driven applications. The company grew to 10 employees within the first year.
@@ -68,7 +68,7 @@ export default function Timelines() {
             <Chrono 
                 items={items}
                 mode="VERTICAL"
-                cardHeight={280} // Make the card height responsive
+                cardHeight={220} // Make the card height responsive
                 cardWidth="100%"
                 theme={{
                     primary: '#e11d48',
