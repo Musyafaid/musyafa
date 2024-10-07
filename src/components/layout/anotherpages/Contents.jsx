@@ -11,7 +11,7 @@ function About() {
      
       
           
-          <div className="m-auto   rounded-sm px-5 ">
+          <div className="m-auto  rounded-sm px-5 ">
             <SkilsFragment />
             <AboutFragmen />
              <Timelines />
